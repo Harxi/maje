@@ -106,8 +106,8 @@ S - Защита""")
                 hit = mob.hit(player)
                 text = f"Нанесено {'нисколько' if youhit == -1 else youhit}, по вам ударили {'нисколько' if hit == -1 else hit}"
             if action == "S":
-                if random.randint(0, 0) == 0:
-                    text = "Успешна защита!"
+                if random.randint(0, 1) == 0:
+                    text = "Успешная защита!"
                 else:
                     hit = mob.hit(player)
                     text = f"По вам ударили {'нисколько' if hit == -1 else hit}"
